@@ -1,0 +1,442 @@
+// out: index.css, sourcermap:false, compress: false//
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+html {
+  font-size: 100%;
+  background: url('../images/homebg1.jpg') no-repeat center center fixed;
+  background-size:cover;
+
+
+}
+*{margin:0;
+padding:0;
+}
+body{
+  width:100%;
+  height:6450px;
+  font-family:'Noto Sans KR',Sans-serif,Helvetica;
+  background: rgba(0,0,0,0.3);
+  overflow:hidden;
+}
+ul,ol,li{
+  list-style:none;
+}
+a{text-decoration:none;
+}
+.cfixed:after{
+  display:block;
+  content:"";
+  clear:both;
+}
+.wrapper{
+  max-width:1920px;
+  width:100%;
+  height:100%;
+  margin:0 auto;
+
+  .wrap{
+    // background: url('../images/homebg1.jpg') no-repeat center center fixed;
+    // background-size:cover;
+    height:100%;
+    overflow:hidden;
+    // z-index:9;
+  }
+}
+//herder start
+header{
+position:fixed;
+width:100%;
+z-index:99;
+height:150px;
+  .logo{
+    position:relative;
+    font-size: 50px;
+    line-height:50px;
+    text-align: center;
+    text-transform: uppercase;
+    //margin-bottom:30px;
+    text-shadow:-10px 8px 15px rgba(0,0,0,1);
+    a{
+      color:#ccc;
+
+    }
+    a:hover{
+      color:yellow;
+      text-shadow:0 0 15px rgba(255,255,0,1);
+    }
+  }
+  nav{
+    margin:0 auto;
+    width:79.16666666%;//1520/1920
+    margin-top:30px;
+    >ul{
+      >li{
+        float:left;
+        width:16.5%;
+        font-size:26px;
+        line-height: 26px;
+        border: 1px solid #ccc;
+        text-transform: uppercase;
+        text-align:center;
+        position:relative;
+
+        a{
+          color:#fff;
+        }
+      }
+      >li:hover ul{
+        display:block;
+      }
+      >li:hover >a{
+        display:inline-block;
+        width:100%;
+        top:-25px;
+        position:relative;
+        border:1px solid #ccc;
+        height:100%;
+        padding-top:25px;
+        background: url('../images/headerlight.2png.png') 50% 10% no-repeat;
+        // background-size: 50px 60px;
+
+      }
+      >li:hover >a, >li ul li:hover >a {
+        color:yellow;
+        text-shadow:0 0 15px rgba(255,255,0,1);
+        transition:text-shadow 1000ms;
+
+
+      }
+      >li:hover  {
+        //vertical-align:baseline;
+        padding-top:0px;
+        height:26px;
+        border:0;
+
+      }
+      ul{
+        display:none;
+        position:relative;
+        top:-20px;
+        box-shadow:0 0 15px rgba(0,0,0,.5);
+        background:rgba(0,0,0,.2);
+        li{
+          width:auto;
+          height:auto;
+        }
+      }//2뎁스ul
+    }//ul
+  }//nav
+  .menu-toggle-btn{
+    display:none;
+  }//btn
+}//header
+
+
+
+section{
+  width:79.16666666%;
+  margin:0 auto;
+  h2{
+    font-size: 50px;
+    color:#fff;
+  }
+}
+#set0{
+  z-index:0;
+  position:relative;
+  width:396px;
+  height:525px;
+  margin:0 auto;
+  padding-top:170px;
+  display:none;
+  .doorimg{
+    width:396px;
+    height:525px;
+    font-size: 0;
+    padding-top:150px;
+    position:fixed;
+    margin:0 auto;
+    .door{
+      display:inline-block;
+    }
+  }
+  .doorimg:hover .left img{
+    transform:rotateY(60deg);
+    transform-origin:0;
+    transition:3s;
+  }
+  .doorimg:hover .right img{
+    transform:rotateY(60deg);
+    transform-origin:200px;
+    transition:3s;
+  }
+}
+#set0:hover {display:block;}
+
+#set1{
+  width:100%;
+  padding-top:185px;
+  position:relative;
+  .slide{
+    width:36%;
+    height:400px;
+    margin:0 auto;
+    position:relative;
+    overflow: hidden;
+    ul{
+      width:100%;
+      height:400px;
+      text-align:center;
+      overflow: hidden;
+      li{
+        display:inline-block;
+
+        img{
+          position:absolute;
+          left:0;
+          width:100%;
+          top:0;
+          background: #fff;
+          display:none;
+        }
+        a{
+          position:relative;
+          top:350px;
+          z-index:1;
+          display:block;
+          width:20px;
+          height:20px;
+          i{
+            color:black;
+          }
+        }
+      }
+      li:first-child img{
+        display:block;
+      }
+      li.on i{background: pink;}
+    }
+  }
+  button{
+    position:absolute;
+    top:0;
+    background:rgba(225,225,225,0);
+    border:0;
+    cursor: pointer;
+  }
+  .prev{
+    left:0;
+    top:50%;
+    margin-left:20px;
+  }
+  .next{
+    right:0;
+    top:50%;
+    margin-right: 20px;
+
+  }
+}
+#set2{
+  .bestmenu{
+
+    ul{
+      width:80%;
+      margin:0 auto;
+      li{
+        float:left;
+        width:30%;
+        height:300px;
+        background-color:#fff;
+        overflow:hidden;
+        text-align:center;
+        position:relative;
+        a{
+          display:inline-block;
+          width:100%;
+          height:100%;
+          img{
+          height:100%;
+          }
+        }
+        button{
+          position:absolute;
+          top:0;
+          left:-400px;
+          background: rgba(0,0,0,0.5);
+          animation: set2-price 5s 2s 1 forwards;
+          color:yellow;
+        }
+        span:nth-child(2){
+          position:absolute;
+          bottom:0;
+          left:0;
+          background:rgba(0,0,0,.5);
+          color:#fff;
+          display:block;
+          width:100%;
+          height:30px;
+        }
+        i:first-child{
+          position:absolute;
+          left:0;
+        }
+        i:last-child{
+          position:absolute;
+          right:0;
+        }
+      }
+    li:nth-child(2){
+      margin:0 5%;
+
+    }
+    }
+  }
+}
+@keyframes set2-price{
+  0%{
+    left:-400px;
+    opacity:0;
+  }
+  100%{
+    left:0;
+    opacity:1
+  }
+}
+#set3{
+  .tastelist{
+    width:60%;
+    position:relative;
+    margin:0 auto;
+    height:400px;
+    a{
+      color:#fff;
+    }
+    >li{
+      background:green;
+      font-size:35px;
+      text-align: center;
+      width:30%;
+      height:80px;
+      line-height: 80px;
+      background:rgba(0,0,0,1);
+
+      a{
+
+      }
+      .taste{
+        position:absolute;
+        top:0;
+        left:30%;
+        width:70%;
+        height:400px;
+
+
+        li img{
+          position:absolute;
+          left:0;
+          top:0;
+          width:100%;
+          height:100%;
+          display: none;
+          background: #fff;
+
+        }
+
+        .hidetext{
+          position:absolute;
+          z-index:1;
+          line-height:40px;
+          font-size:20px;
+          width:50%;
+          opacity:0;
+          }
+          button{
+            position:absolute;
+            top:0;
+            background:rgba(225,225,225,0);
+            border:0;
+            cursor:pointer;
+            display: none;
+            z-index: 1;
+          }
+          .set3prev{
+            left:0;
+            top:50%;
+            margin-left:20px;
+          }
+          .set3next{
+            right:0;
+            top:50%;
+            margin-right: 20px;
+
+          }
+      }
+    }
+    >li:hover{
+      background:#fff;
+    }
+    >li:hover a{
+      color:green;
+    }
+    >li:first-child li:first-child img{display: block;}
+    >li:first-child button{display: block;cursor:pointer;}
+
+
+  }
+
+  .taste:hover .hidetext{
+    opacity:1;
+
+  }
+}
+#set4{
+
+  .location{
+    width:60%;
+    margin:0 auto;
+    overflow: hidden;
+    height: 300px;
+    .mapiframe{
+  iframe{
+  width:100%;
+  height:300px;
+      }
+    }
+  }
+}
+footer{
+  width:20%;
+  margin:0 auto;
+  height:300px;
+  margin-top:50px;
+  margin-bottom:100px;
+  .address{
+    background:#fff;
+
+  }
+}
+// footer{width:398px;
+// height:auto;margin:0 auto;
+// position: relative;}
+// .doorimg{
+//   width: 398px;
+//   height:525px;
+//   font-size:0;
+//   margin:0 auto;
+//   position:fixed;
+//
+//   img{display:inline;
+//   }
+// }
+// .door{display:inline-block;}
+// footer .doorimg:hover .left img{transform:rotateY(60deg);
+// transform-origin:0px;transition:2s;}
+// footer .doorimg:hover .right img{transform:rotateY(60deg);
+// transform-origin:200px;
+//   transition:2s;}
+@media (max-width:1600px){
+  html { font-size:83.3333%; }
+}
+@media (max-width:768px){
+  html { font-size: 40%; }
+}

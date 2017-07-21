@@ -1,0 +1,257 @@
+// out: aboutus.css, sourcermap:false, compress: false//
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+html {
+  font-size: 100%;
+  background: url('../images/homebg1.jpg') no-repeat center center fixed;
+  background-size:cover;
+
+}
+*{margin:0;
+padding:0;
+}
+body{
+  width:100%;
+
+  font-family:'Noto Sans KR',Sans-serif,Helvetica;
+  background: rgba(0,0,0,0.3);
+}
+ul,ol,li{
+  list-style:none;
+}
+a{text-decoration:none;
+}
+.cfixed:after{
+  display:block;
+  content:"";
+  clear:both;
+}
+.wrapper{
+  max-width:1920px;
+  width:100%;
+  height:100%;
+  margin:0 auto;
+
+  .wrap{
+    // background: url('../images/homebg1.jpg') no-repeat center center fixed;
+    // background-size:cover;
+    height:100%;
+    // z-index:9;
+  }
+}
+//herder start
+header{
+position:fixed;
+width:100%;
+z-index:99;
+height:150px;
+  .logo{
+    position:relative;
+    font-size: 50px;
+    line-height:50px;
+    text-align: center;
+    text-transform: uppercase;
+    //margin-bottom:30px;
+    text-shadow:-10px 8px 15px rgba(0,0,0,1);
+    a{
+      color:#ccc;
+
+    }
+    a:hover{
+      color:yellow;
+      text-shadow:0 0 15px rgba(255,255,0,1);
+    }
+  }
+  nav{
+    margin:0 auto;
+    width:79.16666666%;//1520/1920
+    margin-top:30px;
+    >ul{
+      >li{
+        float:left;
+        width:16.5%;
+        font-size:26px;
+        line-height: 26px;
+        border: 1px solid #ccc;
+        text-transform: uppercase;
+        text-align:center;
+        position:relative;
+
+        a{
+          color:#fff;
+        }
+      }
+      >li:hover ul{
+        display:block;
+      }
+      >li:hover >a{
+        display:inline-block;
+        width:100%;
+        top:-25px;
+        position:relative;
+        border:1px solid #ccc;
+        height:100%;
+        padding-top:25px;
+        background: url('../images/headerlight.2png.png') 50% 10% no-repeat;
+        // background-size: 50px 60px;
+
+      }
+      >li:hover >a, >li ul li:hover >a {
+        color:yellow;
+        text-shadow:0 0 15px rgba(255,255,0,1);
+        transition:text-shadow 1000ms;
+
+
+      }
+      >li:hover  {
+        //vertical-align:baseline;
+        padding-top:0px;
+        height:26px;
+        border:0;
+
+      }
+      ul{
+        display:none;
+        position:relative;
+        top:-20px;
+        box-shadow:0 0 15px rgba(0,0,0,.5);
+        background:rgba(0,0,0,.2);
+        li{
+          width:auto;
+          height:auto;
+        }
+      }//2뎁스ul
+    }//ul
+  }//nav
+  .menu-toggle-btn{
+    display:none;
+  }//btn
+}//header
+
+#set0{
+  width:79.16666666%;
+  z-index:0;
+  position:relative;
+  width:396px;
+  height:525px;
+  margin:0 auto;
+  padding-top:170px;
+  display:none;
+  .doorimg{
+    width:396px;
+    height:525px;
+    font-size: 0;
+    padding-top:150px;
+    position:fixed;
+    margin:0 auto;
+    .door{
+      display:inline-block;
+    }
+  }
+  .doorimg:hover .left img{
+    transform:rotateY(60deg);
+    transform-origin:0;
+    transition:3s;
+  }
+  .doorimg:hover .right img{
+    transform:rotateY(60deg);
+    transform-origin:200px;
+    transition:3s;
+  }
+}
+#set0:hover {
+  display:block;
+  width:100%;
+  height:1080px;
+}
+section{
+  position:relative;
+  height:1080px;
+  width:100%;
+  .bgimage{
+    width:79.16666666%;
+    height:100%;
+    margin:0 auto;
+  }
+  .textbox{
+      width:100%;
+      height:300px;
+      background:#fff;
+
+      position:absolute;
+      bottom:0;
+    }
+    h2{
+      width:80%;
+      position:relative;
+      bottom:300px;
+      color:#ddd;
+      }
+    h2:before{
+      content:"";
+      display:inline-block;
+      width:300px;
+      height:2px;
+      background:#ddd;
+      vertical-align: middle;
+    }
+    p{
+      position:relative;
+      right:-50%;
+      color:#222;
+      }
+}
+//set1 start
+#set1{
+
+  // background:url('../images/womans.jpg') center no-repeat fixed;
+  // background-size: 100% 70%;
+  .bgimage{
+  background:url('../images/womans.jpg') center no-repeat fixed;
+  }
+  .textbox{
+    width:100%;
+    height:300px;
+    background:#fff;
+    position:absolute;
+    bottom:0
+  }
+}
+#set2{
+  .bgimage{
+    background:url('../images/fruit.jpg') center no-repeat fixed;
+
+  }
+}
+#set3{
+  .bgimage{
+    background:url('../images/womans.jpg') center no-repeat fixed;
+  }
+
+}
+#set4{
+  .bgimage{
+    background:url('../images/fruit.jpg') center no-repeat fixed;
+  }
+  .mapiframe{
+
+  iframe{
+    width:100%;
+    height:100%;
+    position: absolute;
+    bottom:0;
+
+    }
+  }
+}
+footer{
+  width:20%;
+  margin:0 auto;
+  height:300px;
+  margin-top:50px;
+  margin-bottom:100px;
+  .address{
+    background:#fff;
+
+  }
+}

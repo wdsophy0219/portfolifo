@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jungmira/portfolio.git"
+  },
+  "author": "정미라",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jungmira/portfolio/issues"
+  },
+  "homepage": "https://github.com/Jungmira/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-": "^0.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-includes": "^1.0.0",
+    "grunt-serve": "^0.1.6",
+    "include": "^1.1.0"
+  }
+}
