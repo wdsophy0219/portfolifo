@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Jungmira/portfolio.git"
   },
-  "author": "정미라",
+  "author": '이다연',
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jungmira/portfolio/issues"
